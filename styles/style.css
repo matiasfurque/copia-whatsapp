@@ -31,7 +31,7 @@ body {
   height: 100vh;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25); 
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
 }
 
 /* aside styles */
@@ -79,7 +79,7 @@ aside header {
   cursor: pointer;
   background-color: var(--grey-800);
   color: var(--grey-300);
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .actions button svg {
@@ -141,19 +141,49 @@ aside header {
   cursor: pointer;
   border-left: 3px solid var(--green-400);
 }
-.chat-header{
-    background-color: var(--grey-300);
-    border-bottom: 1px solid var(--grey-600) ;
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    gap: 10px;
+.chat-header {
+  background-color: var(--grey-300);
+  border-bottom: 1px solid var(--grey-600);
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
 }
-.chat-header img{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+.chat-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
 }
 .chat-header p {
-    color: var(--grey-600);
+  color: var(--grey-600);
+}
+/*mensajes*/
+.chat-panel {
+  display: flex;
+  flex-direction: column;
+}
+.messages {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+}
+.message {
+  background-color: var(--grey-300);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.238);
+  padding: 10px;
+  width: 60%;
+}
+.message .time {
+  text-align: end;
+  font-size: 14px;
+  margin-top: 10px;
+  color: var(--grey-700);
+}
+.me {
+  align-self: end;
+  background-color: var(--green-100);
 }
