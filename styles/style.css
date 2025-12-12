@@ -250,3 +250,12 @@ footer .send:hover {
   background-color: var(--green-400);
   transform: scale(0.9);
 }
+@media (max-width:880px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    display: none;
+  }
+}
