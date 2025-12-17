@@ -1,4 +1,5 @@
 # Maquetación de estilo WhatsApp — Entrega
+
 ## Descripción breve
 
 - Este proyecto consiste en la maquetación en HTML y CSS de una interfaz visual inspirada en WhatsApp Web.
@@ -22,8 +23,10 @@
 - Git (control de versiones)
 
 ## Estructura del proyecto
+
 - /index.html
 - /styles/style.css
+
 ## Cómo visualizar el proyecto
 
 - Clonar o descargar el repositorio
@@ -52,4 +55,4 @@
 
 ## Autor
 
-## Matías Furque
+**Matías Furque**
