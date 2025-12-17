@@ -161,6 +161,7 @@ aside header {
 .chat-panel {
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 .messages {
   padding: 20px;
@@ -169,6 +170,7 @@ aside header {
   flex-direction: column;
   gap: 10px;
   align-items: start;
+  overflow-y: auto;
 }
 .message {
   background-color: var(--grey-300);
