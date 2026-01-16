@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clon de Whatsapp</title>
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="shortcut icon" href="/assets/LogosWhatsappIcon.svg" >
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="shortcut icon" href="./src/assets/LogosWhatsappIcon.svg" >
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -53,33 +53,11 @@
           </div>
         </header>
         <div class="search">
-          <form>
-            <input type="search" placeholder="Buscar un chat o iniciar uno nuevo" />
-          </form>
+            <input  id="search" type="search" placeholder="Buscar un chat o iniciar uno nuevo" autocomplete="off"/>
         </div>
         <section class="chats">
           <ul>
-            <li class="user-chat">
-              <img src="https://picsum.photos/seed/picsum/200/300" alt="foto de perfil de maría lópez" />
-              <div>
-                <h3>Rodri</h3>
-                <p>Todo gym? 💣💣</p>
-              </div>
-            </li>
-            <li class="user-chat">
-              <img src="https://picsum.photos/536/354" alt="foto de perfil de maría lópez" />
-              <div>
-                <h3>Iara</h3>
-                <p>Venis?</p>
-              </div>
-            </li>
-            <li class="user-chat">
-              <img src="https://picsum.photos/id/237/200/300" alt="foto de perfil de maría lópez" />
-              <div>
-                <h3>Raquel</h3>
-                <p>Q comiste?</p>
-              </div>
-            </li>
+           
           </ul>
         </section>
       </aside>
@@ -92,53 +70,7 @@
           </div>
         </header>
         <section class="messages">
-          <div class="message you">
-            <p class="content">Q onda amigo todo bien?</p>
-            <p class="time">14:12</p>
-          </div>
-          <div class="message me">
-            <p class="content">Si todo bien vos?</p>
-            <p class="time">14:13</p>
-          </div>
-          <div class="message you">
-            <p class="content">Todo gym? 💣💣</p>
-            <p class="time">14:14</p>
-          </div>
-          <div class="message you">
-            <p class="content">Tipo </p>
-            <p class="time">14:16</p>
-          </div><div class="message you">
-            <p class="content">7?</p>
-            <p class="time">14:16</p>
-          </div><div class="message you">
-            <p class="content">Vas a estar?</p>
-            <p class="time">18:12</p>
-          </div><div class="message you">
-            <p class="content">Amigooo</p>
-            <p class="time">18:20</p>
-          </div><div class="message me">
-            <p class="content">Q onda amigo, sisi estoy</p>
-            <p class="time">18:22</p>
-          </div><div class="message you">
-            <p class="content">Joya te paso a buscar</p>
-            <p class="time">18:25</p>
-          </div><div class="message me">
-            <p class="content">Con la moto?</p>
-            <p class="time">18:26</p>
-          </div><div class="message you">
-            <p class="content">Sisi</p>
-            <p class="time">18:27</p>
-          </div><div class="message me">
-            <p class="content">Dale</p>
-            <p class="time">18:28</p>
-          </div><div class="message me">
-            <p class="content">Avisa cuando estas afuera</p>
-            <p class="time">18:29</p>
-          </div>
-          <div class="message you">
-            <p class="content">Afuera</p>
-            <p class="time">18:55</p>
-          </div>
+          
         </section>
         <footer>
           <button class="attach">
@@ -149,9 +81,8 @@
               />
             </svg>
           </button>
-          <form>
-            <textarea type="text" placeholder="Escribe un mensaje"></textarea>
-          </form>
+          <form id="formMessage">
+            <textarea id="message" type="text" placeholder="Escribe un mensaje"></textarea>
           <button class="send">
             <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24">
               <path
@@ -164,8 +95,11 @@
               />
             </svg>
           </button>
+          </form>
         </footer>
       </div>
     </section>
+    <script src="./src/app/filterData.js"></script>
+    <script src="./src/app/handleMessages.js"></script>
   </body>
 </html>
